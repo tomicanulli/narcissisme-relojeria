@@ -205,19 +205,17 @@ header{
     color: #2d3748;
     border: 1px solid #cbd5e0;
     line-height: 26px;
-    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06);
 }
 .accesosRap div a{
     color: black; 
     text-decoration: none;  
 }
-.accesosRap div:hover {
-        box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #000000;
-        transform: translateY(-2px);
+.accesosRap div:hover { 
+    transform: translateY(-2px);
 }
 .accesosRap div:active{
-        box-shadow: inset 0px 3px 7px #000000;
-        transform: translateY(2px);
+    
+    transform: translateY(2px);
 }
 .accs1{
     grid-area: promo;
