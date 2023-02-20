@@ -6,8 +6,8 @@
     list-style: none;
 }
 a{
-    color: black;
-    text-decoration: none;    
+    color: black; 
+    text-decoration: none;   
 }
 /* ---HEADER--- */
 header{
@@ -35,6 +35,10 @@ header{
 }
 .ul-conteiner li{
     padding: 0 20px;
+}
+.ul-conteiner li a{
+    color: black; 
+    text-decoration: none;  
 }
 /* ---HEADER RESPONSIVE--- */
 .navBar{
@@ -67,7 +71,7 @@ header{
     width: 100%;
     overflow: hidden;
 }
-.contImg img{
+.contImg img, .carousel-inner{
     width: 100%;
     max-height: 88vh;
     object-fit: cover;
@@ -81,6 +85,10 @@ header{
     justify-content: flex-start;
     align-items: flex-end;
     
+}
+.contDet button a{
+    color: #fff; 
+    text-decoration: none;
 }
 /* ---BOTON CATALOGO COMPLETO--- */
 .butCat {
@@ -123,8 +131,8 @@ header{
     transform: translate(-50%, -50%);
 }
 .butCat:hover .transition {
-    width: 14em;
-    height: 14em;
+    width: 19em;
+    height: 19em;
 }
 .butCat:active {
     transform: scale(0.97);
@@ -198,6 +206,10 @@ header{
     border: 1px solid #cbd5e0;
     line-height: 26px;
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06);
+}
+.accesosRap div a{
+    color: black; 
+    text-decoration: none;  
 }
 .accesosRap div:hover {
         box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #000000;
