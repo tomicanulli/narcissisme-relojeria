@@ -44,7 +44,7 @@ header{
 /* ---HEADER RESPONSIVE--- */
 .navBar{
     width: 100%;
-    height: 12vh;
+    height: 110px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -644,6 +644,9 @@ header{
 .infoButton h3{
     padding: 10px 10vh;
     border-bottom: solid 2px black;
+    width: 95%;
+    display: flex;
+    justify-content: center;
 }
 .infoButton div{
     display: flex;
@@ -687,7 +690,7 @@ header{
 }
 
 .contactWp img{
-    width: 6vh;
+    width: 50px;
     margin-bottom: 15px;
 }
 
@@ -873,4 +876,8 @@ header{
         display: flex;
     }
     
+}
+@media only screen and (min-width: 1024px){}
+.imageProduct {
+    height: 75vh;
 }
