@@ -91,7 +91,7 @@ header{
     display: none;
 }
 #check:checked ~ .ul-menu{
-    height: 50vh;
+    height: calc(100vh - 110px);
     transition: 0.5s;
 }
 #check:checked ~ .ul-menu li{
