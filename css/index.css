@@ -83,16 +83,19 @@ header{
     width: 100%;
     /* height: calc(100vh - 110px); */
     height: 0;
-    text-align: center;
     background-color: #000000bb;
     transition: all 0.5s;
 }
 .ul-menu li {
     display: none;
-    padding: 40px 0;
+    padding: 25px 0 25px 15px;
     line-height: 30px;
     transition: all 0.5s;
     font-size: 20px;
+    margin-bottom: 2px;
+}
+.ul-menu li:nth-child(2){
+    background-color: #c5c5c55d
 }
 .ul-menu li:hover{
     background-color: #7b7b7b5d;
@@ -127,6 +130,8 @@ header{
     padding: 5px 0 5px 0;
     margin-left: 20px;
 }
+/* <!-- MENU RESP **MARCA** --> */
+
 /* <!-- MENU RESPONSIVE --> */
 .menu-resp{
     position: absolute;
