@@ -5,6 +5,314 @@
   font-family: 'Montserrat', sans-serif;
   list-style: none; }
 
+/* ---BOTON CATALOGO COMPLETO--- */
+.butCat {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 17px;
+  padding: 1em 0.5em;
+  margin: 1vh 1vh;
+  font-weight: 500;
+  background: #1F2937;
+  color: white;
+  border: none;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 0.6em;
+  bottom: 0;
+  z-index: 500; }
+  .butCat a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none; }
+    .butCat a .transition {
+      transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+      transition-duration: 500ms;
+      background-color: rgba(16, 185, 129, 0.6);
+      border-radius: 9999px;
+      width: 0;
+      height: 0;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+    .butCat a .gradient {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      border-radius: 0.6em;
+      margin-top: -0.25em;
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)); }
+    .butCat a .label {
+      position: relative;
+      top: -1px; }
+  .butCat:hover .transition {
+    width: 19em;
+    height: 19em; }
+  .butCat:active {
+    transform: scale(0.97); }
+
+/* <!-- BOTONES DE ACCESO --> */
+.accesosRap {
+  width: 100%;
+  height: 150px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "promo promo repuesto repuesto"
+ "promo promo repuesto repuesto"
+ "pago pago garantia garantia" 
+ "pago pago garantia garantia"; }
+  .accesosRap div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 60px;
+    margin: auto;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2d3748;
+    border: 1px solid #cbd5e0;
+    line-height: 26px; }
+    .accesosRap div a {
+      color: black;
+      text-decoration: none;
+      text-align: center; }
+  .accesosRap:hover {
+    transform: translateY(-2px); }
+  .accesosRap:active {
+    transform: translateY(2px); }
+
+.accs1 {
+  grid-area: promo; }
+
+.accs2 {
+  grid-area: repuesto; }
+
+.accs3 {
+  grid-area: pago; }
+
+.accs4 {
+  grid-area: garantia; }
+
+.header {
+  display: none;
+  width: 100%;
+  height: 12vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  background-color: #Ffffff;
+  box-shadow: 0px 8px 10px -10px rgba(0, 0, 0, 0.69); }
+  .header a img {
+    width: 50px; }
+  .header .ul-conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: inherit;
+    align-items: center;
+    margin-bottom: 0; }
+    .header .ul-conteiner .li-menu {
+      padding: 3px 20px;
+      position: relative;
+      border-radius: 10%; }
+      .header .ul-conteiner .li-menu a {
+        color: black;
+        text-decoration: none; }
+      .header .ul-conteiner .li-menu .sub-menu ul {
+        display: none;
+        position: absolute;
+        z-index: 999;
+        background-color: #ffffff;
+        padding: 10px 0 5px 0;
+        width: 150px;
+        left: 0; }
+        .header .ul-conteiner .li-menu .sub-menu ul li {
+          padding: 5px 8px;
+          margin: 0;
+          transition: 0.3s; }
+          .header .ul-conteiner .li-menu .sub-menu ul li:hover {
+            background-color: #e7e7e7;
+            transition: 0.3s;
+            padding: 8px 10px; }
+      .header .ul-conteiner .li-menu:hover {
+        background-color: #d2d2d2;
+        transition: 0.3s; }
+    .header .ul-conteiner .logoCompras {
+      padding-left: 3px; }
+  .header .ul-conteiner li:hover > .sub-menu ul {
+    display: flex;
+    flex-direction: column; }
+
+/* ---HEADER RESPONSIVE--- */
+.navBar {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 10px -10px rgba(0, 0, 0, 0.69); }
+  .navBar .imgHead {
+    width: 50px;
+    padding: 5px 0 5px 0;
+    margin-left: 20px; }
+  .navBar .contResp {
+    display: flex;
+    align-items: center; }
+  .navBar #check {
+    display: none; }
+  .navBar #check:checked ~ .ul-menu {
+    height: calc(100vh - 90px);
+    transition: 0.5s; }
+  .navBar #check:checked ~ .ul-menu li {
+    display: block;
+    transition: 0.5s; }
+  .navBar #check:checked ~ label img:first-child {
+    display: none; }
+  .navBar #check:checked ~ label img:nth-child(2) {
+    display: block; }
+  .navBar .bar-btn {
+    display: flex; }
+  .navBar .icoHead, .navBar .icoHead2 {
+    width: 25px;
+    margin: 5px;
+    cursor: pointer; }
+  .navBar .icoHead2, .navBar .icoHead3 {
+    margin-right: 20px; }
+  .navBar .icoHead3 {
+    width: 40px;
+    height: 30px;
+    display: none;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-right: 10px; }
+  .navBar .ul-menu {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    /* height: calc(100vh - 110px); */
+    height: 0;
+    background-color: #000000bb;
+    transition: all 0.5s; }
+    .navBar .ul-menu li {
+      display: none;
+      padding: 25px 0 25px 15px;
+      line-height: 30px;
+      transition: all 0.5s;
+      font-size: 20px;
+      margin-bottom: 2px; }
+      .navBar .ul-menu li a {
+        color: #fff;
+        text-decoration: none; }
+      .navBar .ul-menu li a.active, .navBar .ul-menu li a:hover {
+        color: rgba(16, 185, 129, 0.6);
+        transition: 0.5s; }
+    .navBar .ul-menu li:nth-child(2) {
+      background-color: #c5c5c55d; }
+    .navBar .ul-menu li:hover {
+      background-color: #7b7b7b5d; }
+
+/* <!-- MENU RESPONSIVE --> */
+.menu-resp {
+  position: absolute;
+  z-index: 1;
+  width: 95%;
+  padding: 10px 0 0 0;
+  margin: 0 10px;
+  background-color: #E5E5E5;
+  bottom: 200vh; }
+
+/* RELOJES RECOMENDADOS */
+.recomTitle {
+  /* height: 7vh; */
+  margin: 5px 25px 5px 25px;
+  padding: 5px;
+  text-align: center;
+  letter-spacing: 1.2px; }
+
+/* RELOJES RECOMENDADOS DESKTOP */
+.recomWatch {
+  display: none; }
+
+/* RELOJES RECOMENDADOS RESPONSIVE */
+.contRecom {
+  display: flex;
+  justify-content: center;
+  padding: 10px 3px;
+  /* margin: 10px 0; */
+  height: 45vh;
+  overflow: hidden;
+  border-bottom: solid 2px black; }
+  .contRecom .imgCont {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    object-fit: fill;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    box-shadow: 20px 29px 33px -31px rgba(0, 0, 0, 0.75); }
+    .contRecom .imgCont a {
+      display: flex;
+      justify-content: center;
+      width: 100%; }
+      .contRecom .imgCont a img {
+        width: 100%;
+        padding: 10px;
+        object-fit: cover;
+        border-radius: 20px; }
+  .contRecom .detCont {
+    width: 50%;
+    padding: 10px; }
+    .contRecom .detCont h3 {
+      font-size: 0.9rem;
+      border-bottom: solid 2px black; }
+    .contRecom .detCont h4 {
+      font-size: 0.8rem;
+      border-bottom: solid 2px black;
+      padding: 5px 0; }
+    .contRecom .detCont div {
+      display: flex;
+      padding: 10px 0 5px 0; }
+      .contRecom .detCont div p {
+        padding: 0 10px;
+        background-color: #D9D9D9;
+        box-shadow: 24px 16px 110px -71px rgba(0, 0, 0, 0.69); }
+    .contRecom .detCont .contBut {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      width: 100%;
+      border-radius: 10px; }
+      .contRecom .detCont .contBut button {
+        margin: 5px;
+        border-radius: 10px;
+        height: 7.5vh;
+        padding: 5px 0;
+        font-size: 2vh;
+        border: none;
+        color: white;
+        letter-spacing: 1.5px;
+        text-decoration: none; }
+      .contRecom .detCont .contBut #comprar {
+        background-color: #5DA8AC; }
+      .contRecom .detCont .contBut #wpButton {
+        background-color: #25D366; }
+
 /* <!----- PRODUCTO -----> */
 .productD {
   margin: 3PX;
@@ -126,10 +434,12 @@
     align-items: flex-start;
     justify-content: center;
     margin: 5px;
-    height: 15rem;
-    border-bottom: solid 0.5px #000; }
+    height: 17rem;
+    border-bottom: solid 0.5px #000;
+    transition: 0.5s; }
     .catalogo .contProd:hover {
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      transform: scale(103%); }
     .catalogo .contProd img {
       width: 100%;
       object-fit: cover;
@@ -278,6 +588,7 @@
   .firstFooter .listContF {
     display: flex;
     flex-direction: column;
+    justify-content: inherit;
     align-items: flex-start;
     padding: 10px 3px;
     color: white; }
@@ -305,7 +616,7 @@
     color: #ffffff; }
 
 @media only screen and (min-width: 460px) {
-  .imageProduct {
+  .productD .imageProduct {
     height: 75vh; } }
 
 @media only screen and (min-width: 750px) {
@@ -341,20 +652,68 @@
         box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17; }
   .contRecom {
     display: none; }
-  .recomWatch, .catalogo {
+  .catalogo {
     display: grid;
     align-items: flex-start;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     padding-bottom: 5px; }
-  .contProd {
-    height: 60vh;
-    margin: 2px 20px;
-    padding: 10px;
-    border: 1px solid rgba(67, 67, 67, 0.1);
-    border-radius: 20px;
-    overflow: hidden; }
-    .contProd button {
-      height: 70px; }
+    .catalogo .contProd {
+      height: 60vh;
+      margin: 2px 20px;
+      padding: 10px;
+      border: 1px solid rgba(67, 67, 67, 0.1);
+      border-radius: 20px;
+      overflow: hidden; }
+      .catalogo .contProd .img-prod {
+        width: 100%; }
+      .catalogo .contProd button {
+        height: 70px; }
+  .recomWatch {
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    padding-bottom: 5px; }
+    .recomWatch .contProdR {
+      display: flex;
+      flex-direction: column;
+      height: 60vh;
+      margin: 2px 20px;
+      padding: 10px;
+      border: 1px solid rgba(67, 67, 67, 0.1);
+      border-radius: 20px;
+      overflow: hidden;
+      transition: 0.5s; }
+      .recomWatch .contProdR .img-prod {
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden; }
+      .recomWatch .contProdR:hover {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transform: scale(103%); }
+      .recomWatch .contProdR .priceCont {
+        width: 100%;
+        display: flex; }
+        .recomWatch .contProdR .priceCont .prodDet {
+          width: 70%;
+          padding: 5px 0; }
+      .recomWatch .contProdR .contMG {
+        padding: 0 1px 5px 0;
+        width: 30%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end; }
+        .recomWatch .contProdR .contMG img {
+          width: 25px; }
+      .recomWatch .contProdR button {
+        width: 100%;
+        background-color: #25D366;
+        margin-bottom: 4px;
+        border: none;
+        border-radius: 0 0 20px 20px; }
+        .recomWatch .contProdR button a {
+          color: #fff;
+          text-decoration: none; }
   .productD {
     display: flex;
     justify-content: center;
@@ -374,10 +733,10 @@
         width: 344px;
         margin: 3px 0;
         border-radius: 20px; }
-    .productD .imgZoom img {
-      width: 750px;
-      height: 750px;
-      object-fit: cover; }
+  .imgZoom img {
+    width: 750px;
+    height: 750px;
+    object-fit: cover; }
   .contact {
     flex-direction: row;
     align-items: start; }
@@ -391,7 +750,8 @@
   .contDet {
     margin: 0 0 10px 10px; }
     .contDet .butCat {
-      padding: 1em 2.7em; }
+      padding: 1em 2.7em;
+      margin: 3vh 2vh; }
   .firstFooter {
     display: flex;
     justify-content: space-evenly; }
@@ -412,13 +772,13 @@
   .ul-menu {
     display: none; } }
 
-.imageProduct {
-  height: 75vh; }
+@media only screen and (min-width: 1024px) {
+  .imageProduct {
+    height: 75vh; } }
 
 a {
   color: black;
-  text-decoration: none; 
-}
+  text-decoration: none; }
 
 /* <!-- IMAGEN PRINCIPAL --> */
 .section1 {
@@ -451,181 +811,6 @@ a {
   max-height: 88vh;
   object-fit: cover;
   position: absolute; }
-
-/* ---BOTON CATALOGO COMPLETO--- */
-.butCat {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 17px;
-  padding: 1em 0.5em;
-  font-weight: 500;
-  background: #1F2937;
-  color: white;
-  border: none;
-  position: absolute;
-  overflow: hidden;
-  border-radius: 0.6em;
-  bottom: 0;
-  z-index: 500; }
-  .butCat a {
-    color: white;
-    font-size: 1rem;
-    text-decoration: none; }
-    .butCat a .transition {
-      transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-      transition-duration: 500ms;
-      background-color: rgba(16, 185, 129, 0.6);
-      border-radius: 9999px;
-      width: 0;
-      height: 0;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%); }
-    .butCat a .gradient {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      border-radius: 0.6em;
-      margin-top: -0.25em;
-      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)); }
-    .butCat a .label {
-      position: relative;
-      top: -1px; }
-  .butCat:hover .transition {
-    width: 19em;
-    height: 19em; }
-  .butCat:active {
-    transform: scale(0.97); }
-
-/* <!-- BOTONES DE ACCESO --> */
-.accesosRap {
-  width: 100%;
-  height: 150px;
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas: "promo promo repuesto repuesto"
- "promo promo repuesto repuesto"
- "pago pago garantia garantia" 
- "pago pago garantia garantia"; }
-  .accesosRap div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: 60px;
-    margin: auto;
-    outline: 0;
-    border: 0;
-    cursor: pointer;
-    background-color: white;
-    border-radius: 4px;
-    padding: 8px 16px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #2d3748;
-    border: 1px solid #cbd5e0;
-    line-height: 26px; }
-    .accesosRap div a {
-      color: black;
-      text-decoration: none;
-      text-align: center; }
-  .accesosRap:hover {
-    transform: translateY(-2px); }
-  .accesosRap:active {
-    transform: translateY(2px); }
-
-.accs1 {
-  grid-area: promo; }
-
-.accs2 {
-  grid-area: repuesto; }
-
-.accs3 {
-  grid-area: pago; }
-
-.accs4 {
-  grid-area: garantia; }
-
-/* RELOJES RECOMENDADOS */
-.recomTitle {
-  /* height: 7vh; */
-  margin: 5px 25px 5px 25px;
-  padding: 5px;
-  text-align: center;
-  letter-spacing: 1.2px; }
-
-/* RELOJES RECOMENDADOS RESPONSIVE */
-.contRecom {
-  display: flex;
-  justify-content: center;
-  padding: 10px 3px;
-  /* margin: 10px 0; */
-  height: 45vh;
-  overflow: hidden;
-  border-bottom: solid 2px black; }
-  .contRecom .imgCont {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    height: 100%;
-    object-fit: fill;
-    background-color: #D9D9D9;
-    border-radius: 20px;
-    box-shadow: 20px 29px 33px -31px rgba(0, 0, 0, 0.75); }
-    .contRecom .imgCont a {
-      display: flex;
-      justify-content: center;
-      width: 100%; }
-      .contRecom .imgCont a img {
-        width: 100%;
-        padding: 10px;
-        object-fit: cover;
-        border-radius: 20px; }
-  .contRecom .detCont {
-    width: 50%;
-    padding: 10px; }
-    .contRecom .detCont h3 {
-      font-size: 0.9rem;
-      border-bottom: solid 2px black; }
-    .contRecom .detCont h4 {
-      font-size: 0.8rem;
-      border-bottom: solid 2px black;
-      padding: 5px 0; }
-    .contRecom .detCont div {
-      display: flex;
-      padding: 10px 0 5px 0; }
-      .contRecom .detCont div p {
-        padding: 0 10px;
-        background-color: #D9D9D9;
-        box-shadow: 24px 16px 110px -71px rgba(0, 0, 0, 0.69); }
-    .contRecom .detCont .contBut {
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
-      width: 100%;
-      border-radius: 10px; }
-      .contRecom .detCont .contBut button {
-        margin: 5px;
-        border-radius: 10px;
-        height: 7.5vh;
-        padding: 5px 0;
-        font-size: 2vh;
-        border: none;
-        color: white;
-        letter-spacing: 1.5px;
-        text-decoration: none; }
-      .contRecom .detCont .contBut #comprar {
-        background-color: #5DA8AC; }
-      .contRecom .detCont .contBut #wpButton {
-        background-color: #25D366; }
-
-/* RELOJES RECOMENDADOS DESKTOP */
-.recomWatch {
-  display: none; }
 
 /* LOGO WHATSAPP FIJO */
 .logoCont {
@@ -674,6 +859,7 @@ a {
 .navReturn {
   display: none;
   margin-left: 10px;
+  padding: 3px;
   flex-wrap: wrap; }
 
 /* <!----- TITULOS -----> */
