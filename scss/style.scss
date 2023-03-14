@@ -1,0 +1,123 @@
+@import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./base/reset";
+@import "./components/buttons";
+// LAYOUTS
+@import "./layout/header";
+@import "./layout/recomProducts";
+@import "./layout/product";
+@import "./layout/mainCatalogue";
+@import "./layout/mainContact";
+@import "./layout/mainPreguntas";
+@import "./layout/footer";
+// Media Query
+@import "./layout/media-460";
+@import "./layout/media-750";
+@import "./layout/media-980";
+@import "./layout/media-1024";
+a{
+    color: black; 
+    text-decoration: none;   
+}
+
+/* <!-- IMAGEN PRINCIPAL --> */
+.section1{
+    position: relative;
+    overflow: hidden;
+    .contImg{
+        width: 100%;
+        overflow: hidden;
+        img{
+            width: 100%;
+            max-height: 88vh;
+            object-fit: cover;
+        }
+    }
+    .contDet{
+        width: 100%;
+        bottom: 0;
+        padding: 10px 5px;
+        position: absolute;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        width: 70%;
+        z-index: 100;
+        button a{
+            color: #fff; 
+            text-decoration: none;
+        }
+    }
+}
+/* ---CARROUSEL--- */
+.carousel-inner{
+    width: 100%;
+    max-height: 88vh;
+    object-fit: cover;
+    position: absolute;
+}
+/* LOGO WHATSAPP FIJO */
+.logoCont{
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    a img{
+        width: 60px;
+    }
+}
+/* <!-- BARRA DE BUSQUEDA --> */
+.mainSearch{
+    display: flex;
+    justify-content: center;
+    .searchBar{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        background-color: #bababa;
+        margin: 10px;
+        padding: 0 10px;
+        border-radius: 10px;
+        div{
+            position: relative;
+            display: flex; 
+            justify-content: flex-end;
+            align-items: center;
+            height: 40px;
+            width: 100%;
+            input{
+                    width: 100%;
+                    height: 75%;
+                    border-radius: 10px;
+                    background-color: #606060d8;
+                    border: none;
+                    &::placeholder{
+                        padding-left: 8px;
+                        color: #fff;
+                    }
+            }
+            img{
+                width: 25px;
+                position: absolute;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+/* <!----- LINKS DE RETORNO -----> */
+.navReturn{
+    display: none;
+    margin-left: 10px;
+    padding: 3px;
+    flex-wrap: wrap;
+}
+/* <!----- TITULOS -----> */
+.title{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right top, #6b6b6b, #8e8e8e, #b2b2b2, #d8d8d8, #ffffff);
+    margin: 0 2vh 3px 2vh;
+    padding: 20px 3px;
+    border-radius: 20px;
+}

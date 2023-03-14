@@ -1,0 +1,112 @@
+/* ---BOTON CATALOGO COMPLETO--- */
+.butCat {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 17px;
+    padding: 1em 0.5em;
+    margin: 1vh 1vh;
+    font-weight: 500;
+    background: #1F2937;
+    color: white;
+    border: none;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 0.6em;
+    bottom: 0;
+    z-index: 500;
+    a{
+        color: white;
+        font-size: 1rem;
+        text-decoration: none;
+        .transition {
+            transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+            transition-duration: 500ms;
+            background-color: rgba(16, 185, 129, 0.6);
+            border-radius: 9999px;
+            width: 0;
+            height: 0;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .gradient {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            border-radius: 0.6em;
+            margin-top: -0.25em;
+            background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+        }
+        .label {
+            position: relative;
+            top: -1px;
+        }
+    }
+    &:hover .transition {
+        width: 19em;
+        height: 19em;
+    }
+    &:active {
+        transform: scale(0.97);
+    }    
+}
+/* <!-- BOTONES DE ACCESO --> */
+.accesosRap{
+    width: 100%;
+    height: 150px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "promo promo repuesto repuesto"
+    "promo promo repuesto repuesto"
+    "pago pago garantia garantia" 
+    "pago pago garantia garantia"   
+    ;
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 60px; 
+        margin: auto    ;
+        outline: 0;
+        border: 0;
+        cursor: pointer;
+        background-color: white;
+        border-radius: 4px;
+        padding: 8px 16px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #2d3748;
+        border: 1px solid #cbd5e0;
+        line-height: 26px;
+        a{
+            color: black; 
+            text-decoration: none;
+            text-align: center;  
+        }
+    }
+    &:hover{ 
+        transform: translateY(-2px);
+    }
+    &:active{
+    
+        transform: translateY(2px);
+    }
+}
+.accs1{
+    grid-area: promo;
+}
+.accs2{
+    grid-area: repuesto;
+}
+.accs3{
+    grid-area: pago;
+}
+.accs4{
+    grid-area: garantia;
+}

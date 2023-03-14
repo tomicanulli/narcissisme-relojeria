@@ -1,0 +1,183 @@
+@media only screen and (min-width: 750px){
+    .searchCont{
+        width: 40%;
+    }
+// INDEX HTML
+    .accesosRap{
+        display: flex;
+        height: 110px;
+        div{
+            height: 100px;
+            margin: 0 5px;
+            align-items: center;
+            background: #f5f5fa;
+            border: 0;
+            border-radius: 8px;
+            color: #2a1f62;
+            cursor: pointer;
+            display: flex;
+            font-family: "Cascadia Code",Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
+            font-size: 1rem;
+            justify-content: center;
+            line-height: 1.5rem;
+            position: relative; 
+            transition: .2s;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            white-space: pre;
+            word-break: normal;
+            word-spacing: normal;
+            &:hover {
+                background: #d2d2d2;
+                box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
+            }   
+        }
+    }
+    .contRecom{
+        display: none;
+    }
+    .catalogo{
+        display: grid;
+        align-items: flex-start;
+        grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
+        padding-bottom: 5px;
+        .contProd{
+            height: 60vh;
+            margin: 2px 20px;
+            padding: 10px;
+            border: 1px solid rgba(67,67,67,0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            .img-prod{
+                width: 100%;
+            }
+            button{
+                height: 70px;
+            }
+        }
+    }
+    .recomWatch{
+        display: grid;
+        align-items: flex-start;
+        grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
+        padding-bottom: 5px;
+        .contProdR{
+            display: flex;
+            flex-direction: column;
+            height: 60vh;
+            margin: 2px 20px;
+            padding: 10px;
+            border: 1px solid rgba(67,67,67,0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: 0.5s;
+            .img-prod{
+                border-radius: 20px 20px 0 0;
+                width: 100%;
+                object-fit: cover;
+                overflow: hidden;
+            }
+            &:hover{
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                transform: scale(103%);
+            }
+            .priceCont{
+                width: 100%;
+                display: flex;
+                .prodDet{
+                    width: 70%;
+                    padding: 5px 0;
+                } 
+            }
+            .contMG{
+                padding: 0 1px 5px 0;
+                width: 30%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                img{
+                    width: 25px;
+                }
+            }
+            button{
+                width: 100%;
+                background-color: $whatsappColor;
+                margin-bottom: 4px;
+                border: none;
+                border-radius:0 0 20px 20px;
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    
+// Producto Index
+    .productD{
+        display: flex;
+        justify-content: center;
+        margin: 0 50px 10px 50px;
+        h3, h4, button{
+            display: none;
+        }
+        .imageProduct{
+            width: 50%;
+        }
+        .description{
+            width: 50%;
+            h3, h4, button{
+                display: block;
+            }
+            p{
+                margin: 0 0 0 5px;
+            }
+            button{
+                height: 40px;
+                width: 344px;
+                margin: 3px 0;
+                border-radius: 20px;
+            }
+        }   
+    }
+    .imgZoom img{
+        width: 750px;
+        height: 750px;
+        object-fit: cover;
+    }
+    .contact{
+        flex-direction: row;
+        align-items: start;
+        .infoButton{
+            height: 50vh;
+            width: 35%;
+        }
+        .contactMail{
+            height: 50vh;
+            width: 75%;
+            padding: 0 30px;
+        }
+    }
+    .contDet{
+        margin: 0 0 10px 10px;
+        .butCat{
+            padding: 1em 2.7em;
+            margin: 3vh 2vh;
+        }
+    }
+    .firstFooter{
+        display: flex;
+        justify-content: space-evenly;
+        #whatsQr{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 200px;
+                justify-content: center;
+                margin-top: 4px;
+            }
+        }
+    }
+}

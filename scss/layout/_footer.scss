@@ -1,0 +1,44 @@
+/* FOOTER */
+.firstFooter{
+    display: grid;
+    align-items: flex-start;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+    color: white;
+    background-color: #949494;
+    #whatsQr{
+        display: none;
+    }
+    .listContF{
+        @include flex(column, inherit, flex-start);
+        padding: 10px 3px;
+        color: white;
+        h4{
+            border-bottom:  solid 2px black;
+            padding: 0 0 4px 0;
+            font-size: 18px;
+        }
+        ul{
+            padding-top: 3px;
+            padding-left: 0;
+            li a{
+                color: white;
+                text-decoration: none;
+                img{
+                        width: 20px;
+                    }
+            }
+        }
+    }
+}
+.secondFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    h3{
+        padding: 7px 0;
+        font-size: 1rem;
+        color: #ffffff;
+    }
+}

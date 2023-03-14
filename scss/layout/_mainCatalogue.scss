@@ -1,0 +1,129 @@
+/* CATALOGO HEAD */
+.topWatchesConteiner{
+    width: 100%;
+    padding: 0 3px;
+    position: relative;
+    // .title{
+    //     display: flex;
+    //     justify-content: center;
+    //     background-image: linear-gradient(to right top, #6b6b6b, #8e8e8e, #b2b2b2, #d8d8d8, #ffffff);
+    //     margin: 0 2vh 3px 2vh;
+    //     padding: 20px 3px;
+    //     border-radius: 20px;
+    // }
+    a{
+        padding: 0 0 0 2vh;
+        font-size: 15px;
+    }
+    p{
+        display: inline;
+        font-size: 15px;
+    }
+    .contFilter{
+        display: flex;
+        justify-content: space-between;
+        .filter1 img{  
+            object-fit: cover;             
+            width: 25px;
+            margin-left: 2vh;
+        }
+        .filter2{
+            margin-right: 2vh;
+            display: flex;
+            align-items: center;
+            height: 25px;
+            border: solid 1px #000000;
+            border-radius: 30px;
+            padding: 0 2vh ;
+            p{
+                padding-right: 2vh ;
+            }
+        }
+    }
+    .filtersP{
+        display: none;
+        width: 100%;
+        height: 20vh;
+        padding: 10px 15px;
+        background-color: #d8d8d8;
+        position: absolute;
+        a{
+            display: flex;
+            justify-content: flex-end;
+            height: 25px;
+            width: 100%;
+            padding-top: 5px;
+            border-bottom: 0.5px solid #bababa; 
+            input{
+                margin-right: 5px;
+            }
+        }
+    }
+}
+/* CATALOGO PRDDUCTOS */
+.catalogo{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(160px,1fr));
+    .contProd{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 5px;
+        height: 17rem;
+        border-bottom: solid 0.5px #000;
+        transition: 0.5s;
+        &:hover{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            transform: scale(103%);
+        }
+        img{
+            width: 100%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        .img-prod{
+            border-radius: 20px 20px 0 0;
+        }
+        .priceCont{
+            width: 100%;
+            display: flex;
+            .prodDet{
+                width: 70%;
+                padding: 5px 0;
+            } 
+        }
+        .contMG{
+            padding: 0 1px 5px 0;
+            width: 30%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            img{
+                width: 25px;
+            }
+        }
+        button{
+            width: 100%;
+            background-color: $whatsappColor;
+            margin-bottom: 4px;
+            border: none;
+            border-radius:0 0 20px 20px;
+            a{
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.nextPage{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    button{
+        padding: 3px 30px;
+        margin: 20px 0;
+        border-radius: 5px;  
+    }
+}
