@@ -1,3 +1,8 @@
+@mixin block{
+    display: block;
+}
+
+
 @mixin flex($direction, $justify, $align){
     display: flex;
     flex-direction: $direction;

@@ -25,15 +25,15 @@
         <!-- HEADER MOBILE -->
         <section class="navBar">
             <div>
-                <a href="../index.html"><img class="imgHead" src="../assets/img/logoNarci3.jpg" alt=""></a>
+                <a href="../index.html"><img class="imgHead" src="../assets/img/logoNarci3.jpg" alt="logo" title="logo"></a>
             </div>
             <div class="contResp">
-                <a href="#"><img class="icoHead" src="../assets/icons/meGusta.png" alt=""></a>
-                <a href="#"><img class="icoHead" src="../assets/icons/bagShoppingWhite.svg" alt=""></a>
+                <a href="#"><img class="icoHead" src="../assets/icons/meGusta.png" alt="iconMg" title="Icono me gusta"></a>
+                <a href="#"><img class="icoHead" src="../assets/icons/bagShoppingWhite.svg" alt="iconBag" title="Icono carrito"></a>
                 <input type="checkbox" id="check">
                 <label for="check" class="bar-btn">
-                    <img class="icoHead2" src="../assets/icons/barsSolidWhite.svg" alt="">
-                    <img class="icoHead3" src="../assets/icons/x-solid.svg" alt="">
+                    <img class="icoHead2" src="../assets/icons/barsSolidWhite.svg" alt="icon menu hambur">
+                    <img class="icoHead3" src="../assets/icons/x-solid.svg" alt="icon X">
                 </label>
                 <ul class="ul-menu">
                     <li class="li-menu-resp"><a href="../index.html">INICIO</a></li>
@@ -41,12 +41,13 @@
                     <li class="li-menu-resp"><a href="../pages/catalogoCompleto.html">MARCA</a></li>
                     <li class="li-menu-resp"><a href="../pages/catalogoCompleto.html">CALIDAD</a></li>
                     <li class="li-menu-resp"><a href="../pages/catalogoCompleto.html">GENERO</a></li>
+                    <li class="li-menu-resp"><a href="./pages/contacto.html">CONTACTO</a></li>
                 </ul>
             </div> 
         </section>
         <!-- HEADER DESKTOP -->
         <section class="header">
-            <a class="mainLogo" href="../index.html"><img class="imgHead" src="../assets/img/logoNarci3.jpg" alt=""></a>
+            <a class="mainLogo" href="../index.html"><img class="imgHead" src="../assets/img/logoNarci3.jpg" alt="logo" title="logo"></a>
             <div class="nav">
                 <ul class="ul-conteiner">
                     <li class="li-menu"><a href="../index.html">INICIO</a></li>
@@ -92,65 +93,122 @@
         </section>    
     </header>
     <main>
-        <!-- BARRA DE BUSQUEDA -->
-        <section class="mainSearch">
-            <div class="searchBar">
-                <div class="searchCont">
-                    <input class="buscador" type="text" placeholder=" Buscar">
-                    <img src="../assets/img/lupa.png" alt="">
+        <section class="preMain">
+            <!-- LINKS RETURN -->
+            <nav>
+                <ul class="navReturn">
+                    <li><a href="../index.html">Inicio  </a></li>
+                    <li><a href="#">/ Preguntas Frecuentes </a></li>
+                </ul>
+            </nav>
+            <!-- BARRA DE BUSQUEDA -->
+            <div class="mainSearch">
+                <div class="searchBar">
+                    <div class="searchCont">
+                        <input class="buscador" type="text" placeholder=" Buscar">
+                        <img src="../assets/img/lupa.png" alt="img lupa" title="img lupa">
+                    </div>
                 </div>
             </div>
         </section>
         <!----- PAGINA ----->
-        <nav>
-            <ul class="navReturn">
-                <li><a href="../index2.html">Inicio  </a></li>
-                <li><a href="#">/ Preguntas Frecuentes </a></li>
-            </ul>
-        </nav>
-        <div>
-            <h2 class="title">PREGUNTAS FRECUENTES</h2>
+        <div class="titleCont">
+            <h1 class="title1">
+                <span class="cont-text">
+                    <span class="text">Preguntas Frecuentes
+                    </span>
+                </span>
+            </h1>
         </div>
-        <section class="contPregFrec">
-            <div class="contPreg">
-                <nav>   
-                    <h4>¿Cuáles son los Métodos de pago?</h4>
-                    <img src="../assets/icons/arrowDown.svg" alt="">
-                </nav>
-                <p> Los métodos de pagos son, efectivo (pesos o dólares), transferencias, depósitos y Criptos </p>
+        <section class="cont-Preg">
+            <div class="contPregFrec">
+                <div class="contPreg"> 
+                    <input type="checkbox" id="dropDown1">
+                    <label for="dropDown1">
+                        <h4>¿Cuáles son los Métodos de pago?</h4>
+                        <img src="../assets/icons/arrow-down-sign-to-navigate.png" alt="icon arrow down" title="icon arrow down">
+                    </label>
+                    <p class="respuesta"> Los métodos de pagos son, <b>efectivo (pesos o dólares), transferencias, depósitos y Cripto</b>.</p>
+                </div>
+                <div class="contPreg"> 
+                    <input type="checkbox" id="dropDown2">
+                    <label for="dropDown2">
+                        <h4>¿Cuál es la forma de envío?</h4>
+                        <img src="../assets/icons/arrow-down-sign-to-navigate.png" alt="icon arrow down" title="icon arrow down">
+                    </label>
+                    <p class="respuesta"> El envío se realizará atraves de <b>Correo Andreani</b>, una vez recibido el pago. Tambien se puede convenir un correo diferente, si lo requiere.</p>
+                </div>
+                <div class="contPreg"> 
+                    <input type="checkbox" id="dropDown3">
+                    <label for="dropDown3">
+                        <h4>¿Dónde estamos ubicados?</h4>
+                        <img src="../assets/icons/arrow-down-sign-to-navigate.png" alt="icon arrow down" title="icon arrow down">
+                    </label>
+                    <p class="respuesta"> Estamos ubicados en la ciudad de <b>Rosario</b>, contamos con showroom para ver los relojes personalmente. Las visitan se realizaran con aviso previo.</p>
+                </div>
+                <div class="contPreg"> 
+                    <input type="checkbox" id="dropDown4">
+                    <label for="dropDown4">
+                        <h4>¿Qué garantía ofrecen?</h4>
+                        <img src="../assets/icons/arrow-down-sign-to-navigate.png" alt="icon arrow down" title="icon arrow down">
+                    </label>
+                    <p class="respuesta">######## </p>
+                </div>
+                <div class="contPreg"> 
+                    <input type="checkbox" id="dropDown5">
+                    <label for="dropDown5">
+                        <h4>¿Cómo realizar un pedido de un reloj que no está en stock?</h4>
+                        <img src="../assets/icons/arrow-down-sign-to-navigate.png" alt="icon arrow down" title="icon arrow down">
+                    </label>
+                    <p class="respuesta">Los modelos "SIN STOCK" se pueden volver a pedir mediante encargue, tambien puede consultar por cualquier otro reloj para encargue enviando foto via Whatsapp. Recomendamos utilizar Google o paginas oficiales para encontrar modelos diferentes. </p>
+                </div>
             </div>
-            <div class="contPreg">
-                <nav>   
-                    <h4>¿Cuál es la forma de envío?</h4>
-                    <img src="../assets/icons/arrowDown.svg" alt="">
-                </nav>
-                <p>El envío se realizará atraves de Correo Andreani, una vez recibido el pago. Tambien se puede convenir un correo diferente, si lo requiere. </p>
-            </div>
-            <div class="contPreg">
-                <nav>   
-                    <h4>¿Dónde estan ubicados?</h4>
-                    <img src="../assets/icons/arrowDown.svg" alt="">
-                </nav>
-                <p>Estamos ubicados en la ciudad de Rosario, contamos con showroom para ver los relojes personalmente. Las visitan se realizaran con aviso previo. </p>
-            </div>
-            <div class="contPreg">
-                <nav>   
-                    <h4>¿Qué garantía ofrecen?</h4>
-                    <img src="../assets/icons/arrowDown.svg" alt="">
-                </nav>
-                <p> </p>
-            </div>
-            <div class="contPreg">
-                <nav>   
-                    <h4>¿Cómo realizar un pedido de un reloj que no está en stock?</h4>
-                    <img src="../assets/icons/arrowDown.svg" alt="">
-                </nav>
-                <p>Los modelos "SIN STOCK" se pueden volver a pedir mediante encargue, tambien puede consultar por cualquier otro reloj para encargue enviando foto via Whatsapp. Recomendamos utilizar Google o paginas oficiales para encontrar modelos diferentes.</p>
+            <div class="contPregFrec">
+                <div class="contPreg"> 
+                    <input type="checkbox" id="dropDown6">
+                    <label for="dropDown6">
+                        <h4>¿Cuáles son los Métodos de pago?</h4>
+                        <img src="../assets/icons/arrow-down-sign-to-navigate.png" alt="icon arrow down" title="icon arrow down">
+                    </label>
+                    <p class="respuesta"> Los métodos de pagos son, efectivo (pesos o dólares), transferencias, depósitos y Cripto. </p>
+                </div>
+                <div class="contPreg"> 
+                    <input type="checkbox" id="dropDown7">
+                    <label for="dropDown7">
+                        <h4>¿Cuál es la forma de envío?</h4>
+                        <img src="../assets/icons/arrow-down-sign-to-navigate.png" alt="icon arrow down" title="icon arrow down">
+                    </label>
+                    <p class="respuesta"> El envío se realizará atraves de Correo Andreani, una vez recibido el pago. Tambien se puede convenir un correo diferente, si lo requiere.</p>
+                </div>
+                <div class="contPreg"> 
+                    <input type="checkbox" id="dropDown8">
+                    <label for="dropDown8">
+                        <h4>¿Dónde estan ubicados?</h4>
+                        <img src="../assets/icons/arrow-down-sign-to-navigate.png" alt="icon arrow down" title="icon arrow down">
+                    </label>
+                    <p class="respuesta"> Estamos ubicados en la ciudad de Rosario, contamos con showroom para ver los relojes personalmente. Las visitan se realizaran con aviso previo.</p>
+                </div>
+                <div class="contPreg"> 
+                    <input type="checkbox" id="dropDown9">
+                    <label for="dropDown9">
+                        <h4>¿Qué garantía ofrecen?</h4>
+                        <img src="../assets/icons/arrow-down-sign-to-navigate.png" alt="icon arrow down" title="icon arrow down">
+                    </label>
+                    <p class="respuesta">######## </p>
+                </div>
+                <div class="contPreg"> 
+                    <input type="checkbox" id="dropDown10">
+                    <label for="dropDown10">
+                        <h4>¿Cómo realizar un pedido de un reloj que no está en stock?</h4>
+                        <img src="../assets/icons/arrow-down-sign-to-navigate.png" alt="icon arrow down" title="icon arrow down">
+                    </label>
+                    <p class="respuesta">Los modelos <b>"SIN STOCK"</b> se pueden volver a pedir mediante encargue, tambien puede consultar por cualquier otro reloj para encargue enviando foto via Whatsapp. Recomendamos utilizar Google o paginas oficiales para encontrar modelos diferentes. </p>
+                </div>
             </div>
         </section>
         <!----- LOGO WHATSAPP FIJO----->
         <div class="logoCont">
-            <a href="https://api.whatsapp.com/send?phone=543462649084"><img class="logoWp" src="../assets/icons/whatsapp-logo.svg" alt=""></a>
+            <a href="https://api.whatsapp.com/send?phone=543462649084"><img class="logoWp" src="../assets/icons/whatsapp-logo.svg" alt="logo Whatsapp" title="Logo whatsapp"></a>
         </div>
     </main>
     <!----- FOOTER----->
@@ -158,14 +216,14 @@
         <section class="firstFooter">
             <div id="whatsQr" class="listContF">
                 <h4>Contactame al Whatsapp</h6>
-                <img src="../assets/img/WhatsAppQR.jpeg" alt="">
+                <img src="../assets/img/WhatsAppQR.jpeg" alt="qr whatsapp" title="qr whatsapp">
             </div>
             <div class="listContF">
                 <h4>Redes Sociales</h4>
                 <ul>
-                    <li><a href="https://api.whatsapp.com/send?phone=543462649084"><img class="iconsF" src="../assets/icons/whatsapp.png" alt=""> Whatsapp</a></li>
-                    <li><a href="https://instagram.com/relojes_ros?igshid=YmMyMTA2M2Y="><img class="iconsF" src="../assets/icons/instagram.png" alt=""> Instagram</a></li>
-                    <li><a href="#"><img class="iconsF" src="../assets/icons/facebook.png" alt=""> Facebook</a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=543462649084"><img class="iconsF" src="../assets/icons/whatsapp.png" alt="icono whatsapp" title="icono whatsapp"> Whatsapp</a></li>
+                    <li><a href="https://instagram.com/relojes_ros?igshid=YmMyMTA2M2Y="><img class="iconsF" src="../assets/icons/instagram.png" alt="icono instagram" title="icono instagram"> Instagram</a></li>
+                    <li><a href="#"><img class="iconsF" src="../assets/icons/facebook.png" alt="icono facebook" title="icono facebook"> Facebook</a></li>
                 </ul>
             </div>
             <div class="listContF">
@@ -198,7 +256,7 @@
         </section>
         <section class="secondFooter">
             <h3>Copyright © 2018-2022 | Narcissisme. All Rights Reserved.</h3>
-            <img src="../assets/icons/bitcoin.png" alt="">
+            <img src="../assets/icons/bitcoin.png" alt="logo bitcoin" title="logo bitcoin">
         </section>
     </footer>
 </body>

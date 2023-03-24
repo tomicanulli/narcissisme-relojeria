@@ -1,0 +1,417 @@
+
+/* <!----- LINKS DE RETORNO -----> */
+.navReturn{
+    display: none;
+    margin-left: 10px;
+    flex-wrap: wrap;
+}
+
+.detCont div{
+    display: flex;
+    padding: 10px 0 5px 0;
+
+}
+.detCont div p{
+    padding: 0 10px;
+    background-color: #D9D9D9;
+    box-shadow: 24px 16px 110px -71px rgba(0,0,0,0.69);
+}
+
+/* <!----- PRODUCTO -----> */
+
+.productD h3{
+    margin-left: 8px;
+    margin-right: 10px;
+    padding: 15px 0px 5px 0px;
+    border-bottom: solid 2px #070707;
+}
+.productD h4{
+    font-size: 20px;
+    margin-left: 8px;
+    margin-right: 35%;
+    padding: 10px 40px 5px 0px;
+    border-bottom: solid 2px #070707;
+}
+.productD button{
+    margin: 0 2px;
+    width: 44%;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+}
+.productD button a{
+    color: #fff;
+}
+#buttonBuy{
+    background-color: #4FA095;
+}
+#buttonWp{
+    background-color: #25D366;
+}
+.imageProduct{
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    margin: 8px;
+    border-radius: 20px;
+    background-color: #d9d9d9;
+
+}
+.imageProduct img{
+    object-fit: cover;
+    padding: 15px;
+    border-radius: 20px;
+}
+.description{
+    margin-left: 8px;
+}
+.description h3{
+    display: none;
+}
+.description h4{
+    display: none;
+}
+.description button{
+    display: none;
+}
+.description p{
+    font-size: 20px;
+    margin-right: 60%;
+    padding: 10px 40px 5px 0px;
+}
+.description ul{
+    margin: 0 8px 10px 8px;
+    width: 70%;
+    
+}
+.description ul li{
+    border-bottom: solid 0.1px #999999;
+    padding: 5px 0;
+}
+.imgZoom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2vh;
+}
+.imgZoom img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin: 5px;
+}
+
+
+
+
+
+ 
+.iconsF
+
+.secondFooter 
+/* CATALOGO */
+.topWatchesConteiner{
+    width: 100%;
+    padding: 0 3px;
+    position: relative;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right top, #6b6b6b, #8e8e8e, #b2b2b2, #d8d8d8, #ffffff);
+    margin: 0 2vh 3px 2vh;
+    padding: 20px 3px;
+    border-radius: 20px;
+}
+.topWatchesConteiner a{
+    padding: 0 0 0 2vh;
+    font-size: 15px;
+}
+.topWatchesConteiner p{
+    display: inline;
+    font-size: 15px;
+}
+.contFilter{
+    display: flex;
+    justify-content: space-between;
+}
+.filter1 img{  
+    object-fit: cover;             
+    width: 25px;
+    margin-left: 2vh;
+}
+.filter2{
+    margin-right: 2vh;
+    display: flex;
+    align-items: center;
+    height: 25px;
+    border: solid 1px #000000;
+    border-radius: 30px;
+    padding: 0 2vh ;
+
+}
+.filter2 p{
+    padding-right: 2vh ;
+}
+.filtersP{
+    display: none;
+    width: 100%;
+    height: 20vh;
+    padding: 10px 15px;
+    background-color: #d8d8d8;
+    position: absolute;
+}
+.filtersP a{
+    display: flex;
+    justify-content: flex-end;
+    height: 25px;
+    width: 100%;
+    padding-top: 5px;
+    border-bottom: 0.5px solid #bababa; 
+}
+.filtersP a input{
+    margin-right: 5px;
+}
+.catalogo{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(160px,1fr))
+}
+
+.contProd{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 5px;
+    height: 15rem;
+    border-bottom: solid 0.5px #000;
+}
+.contProd:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.contProd img{
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.img-prod{
+    border-radius: 20px 20px 0 0;
+}
+
+.priceCont{
+    width: 100%;
+    display: flex;
+}
+.prodDet{
+    width: 70%;
+    padding: 5px 0;
+} 
+.contMG{
+    padding: 0 1px 5px 0;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.contMG img{
+    width: 25px;
+}
+.nextPage button{
+    padding: 3px 30px;
+    margin: 20px 0;
+    border-radius: 5px;  
+}
+.nextPage{
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 5px;
+}
+/*-------- CONTACTO------- */
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px 2px 10px;
+}
+.infoButton{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D9D9D9;
+    margin: 0 10px 10px 10px;
+    width: 100%;
+    border-radius: 20px;
+    
+}
+.infoButton h3{
+    padding: 10px 10vh;
+    border-bottom: solid 2px black;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+}
+.infoButton div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EBEBEB;
+    height: 50px;
+    width: 90%;
+    margin: 10px;
+    border-bottom: solid 2px black;
+    border-radius: 10px;
+}
+.contactMail{
+    width: 100%;
+    background: #E5E5E5;
+    border-radius: 20px;
+    margin: 0 10px 10px 10px;
+}
+.contactMail h3{
+    margin: 0 50% 10px 30px;
+    padding: 10px 0 10px 10px;
+}
+.contactWp{
+    display: flex;
+    align-items: center ;
+    width: 90%;
+    height: 40px;
+    margin: 0 50% 10px 30px;   
+    border-bottom: solid 2px black;
+}
+.contactWp 
+.contactWp button a{
+    color: white;
+}
+
+.contactWp img{
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.contactInputs{
+    margin-left: 10px;
+}
+
+.contactInputs div{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 10px 15px 0;
+}   
+
+.contactInputs div input{
+    width: 60%;
+
+}
+.contactMens{
+    height: 150px;
+}
+
+
+@media only screen and (min-width: 750px){
+    
+   
+    
+    #whatsQr 
+    
+    .productD h3, .productD h4, .productD button{
+        display: none;
+    }
+    
+    .description{
+        width: 50%;
+    }
+    .description h3, .description h4, .description button{
+        display: block;
+    }
+    .description button{
+        height: 40px;
+        width: 344px;
+        margin: 3px 0;
+        border-radius: 20px;
+    }
+    .description p{
+        margin: 0 0 0 5px;
+    }
+    .imgZoom img{
+        width: 750px;
+        height: 750px;
+        object-fit: cover;
+    }
+    .accesosRap{
+        display: flex;
+        height: 110px;
+    }
+    .accesosRap div{
+        height: 100px;
+        margin: 0 5px;
+        align-items: center;
+        background: #f5f5fa;
+        border: 0;
+        border-radius: 8px;
+        color: #2a1f62;
+        cursor: pointer;
+        display: flex;
+        font-family: "Cascadia Code",Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
+        font-size: 1rem;
+        justify-content: center;
+        line-height: 1.5rem;
+        position: relative; 
+        transition: .2s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: pre;
+        word-break: normal;
+        word-spacing: normal;
+    }
+
+    .accesosRap div:hover {
+        background: #d2d2d2;
+        box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
+    }   
+    .contRecom{
+        display: none;
+    }
+    .recomWatch, .catalogo{
+        display: grid;
+        align-items: flex-start;
+        grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
+        padding-bottom: 5px;
+    }
+    .contProd{
+        height: 60vh;
+        margin: 2px 20px;
+        padding: 10px;
+        border: 1px solid rgba(67,67,67,0.1);
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .contProd button{
+        height: 70px;
+    }
+    .contact{
+        flex-direction: row;
+        align-items: start;
+    }
+    .infoButton{
+        height: 50vh;
+        width: 35%;
+    }
+    .contactMail{
+        height: 50vh;
+        width: 75%;
+        padding: 0 30px;
+    }
+    .contDet{
+        margin: 0 0 10px 10px;
+    }
+    .butCat{
+        padding: 1em 2.7em;
+    }
+}
+
