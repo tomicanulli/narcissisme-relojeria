@@ -860,7 +860,13 @@
   .cont-Preg {
     display: flex;
     flex-direction: row;
-    transition: 1s; } }
+    transition: 1s; }
+  .preMain {
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center; }
+    .preMain .navReturn {
+      width: 180%; } }
 
 @media only screen and (min-width: 980px) {
   .navBar {
@@ -868,7 +874,9 @@
   .header {
     display: flex; }
   .ul-menu {
-    display: none; } }
+    display: none; }
+  .preMain .navReturn {
+    width: 100%; } }
 
 @media only screen and (min-width: 1024px) {
   .productD .imageProduct {
@@ -920,15 +928,14 @@ a {
 
 .preMain {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column-reverse;
   width: 100%; }
 
 /* <!-- BARRA DE BUSQUEDA --> */
 .mainSearch {
   display: flex;
   justify-content: flex-end;
-  width: 50%;
+  width: 100%;
   transition: 0.5s; }
   .mainSearch :hover {
     transition: 0.5s;
@@ -936,7 +943,7 @@ a {
   .mainSearch .searchBar {
     display: flex;
     justify-content: flex-end;
-    width: 50%;
+    width: 100%;
     box-shadow: 0 1px 4px rgba(55, 73, 87, 0.1), 0 5px 10px rgba(55, 73, 87, 0.15);
     margin: 10px; }
     .mainSearch .searchBar div {
@@ -961,10 +968,12 @@ a {
 
 /* <!----- LINKS DE RETORNO -----> */
 .navReturn {
-  display: flex;
-  margin-left: 10px;
-  padding: 3px;
-  flex-wrap: wrap; }
+  width: 100%; }
+  .navReturn ul {
+    display: flex;
+    margin-left: 10px;
+    padding: 3px;
+    flex-wrap: wrap; }
 
 /* <!----- TITULOS -----> */
 .title {

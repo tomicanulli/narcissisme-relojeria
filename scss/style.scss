@@ -65,15 +65,16 @@ a{
 }
 .preMain{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column-reverse;
+    // align-items: center;
+    // justify-content: space-between;
     width: 100%;
 }
 /* <!-- BARRA DE BUSQUEDA --> */
 .mainSearch{
     display: flex;
     justify-content: flex-end;
-    width: 50%;
+    width: 100%;
     transition: 0.5s;
     :hover{
         transition: 0.5s;
@@ -83,7 +84,7 @@ a{
     .searchBar{
         display: flex;
         justify-content: flex-end;
-        width: 50%;
+        width: 100%;
         box-shadow: $boxShadow;
         margin: 10px;
         div{
@@ -113,10 +114,13 @@ a{
 }
 /* <!----- LINKS DE RETORNO -----> */
 .navReturn{
+    width: 100%;
+    ul{
     display: flex;
     margin-left: 10px;
     padding: 3px;
     flex-wrap: wrap;
+    }  
 }
 /* <!----- TITULOS -----> */
 .title{
